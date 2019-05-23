@@ -1,0 +1,10 @@
+1: spout wordCountSpout comment.csv
+1->2
+
+2: bolt 2 wordCountBoltTransform1
+2->3
+
+3: bolt 2 wordCountBoltTransform2
+3->4
+
+4: sink wordCountSink output.txt

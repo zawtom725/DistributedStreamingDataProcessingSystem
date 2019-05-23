@@ -1,0 +1,7 @@
+1: spout topTenSpout comment.csv
+1->2
+
+2: bolt 3 topTenBolt
+2->3
+
+3: sink topTenSink output.txt
